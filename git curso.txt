@@ -29,6 +29,11 @@ rm grit.gemspec
 si quieres ver algunas estadísticas de cada confirmación.
 git log --stat
 
+modifica el formato de salida
+git log --pretty=oneline
+git log --pretty=short
+git log --pretty=fuller
+git log --pretty=full
 
 con que comando iniciamos proyecto
 git init
