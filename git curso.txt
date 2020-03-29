@@ -1,0 +1,197 @@
+CURSO DE GIT COMANDOS 
+
+con que comando creamos un usuario
+git config --global user.name"edwyn" 
+
+con que comando creamos un email
+git config --global user.email"ededed20218@gmail.com"   
+
+
+cual es el comando para ver los colores
+git config --global color.ui true  
+
+git config --global --list: para ver las modificaciones que le hemos hecho a git
+
+tres formas de pedir ayuda
+git help <comando>
+git <comando> --help
+man git-<comando>
+
+Para ver lo que has modificado pero aún no has preparado.
+git diff
+
+saltar area de preparación y guardar de una vez.
+git commit -a -m 'added new benchmarks'
+
+para eliminar archivos.
+rm grit.gemspec
+
+si quieres ver algunas estadísticas de cada confirmación.
+git log --stat
+
+
+con que comando iniciamos proyecto
+git init
+
+con que comando vemos el status del proyecto
+git status
+
+con que comando agregamos archivos al area de trabajo
+git add
+
+cuales son las 2 formas de agregar archivos a la mesa de trabajo
+git add nombre del archivo
+git add -a para agregar todos los arhivos
+
+
+con que comando se guardan los cambios
+git commit -m "mensaje"
+
+con que comando se muestra toda la lista de commits en codigo sha y el autor
+git log
+
+con que comando se viaja entre los commits
+git checkout + codigo sha
+
+que comando nos lleva al ultimo commit
+git checkout master
+
+que comando exporta los commits a un txt
+git log > commits.txt
+
+comando peligroso que elimina los commits
+git reset
+
+
+cuales son los 3 tipos de reset
+git reset soft, git reset --mixed, git reset hard
+
+cual es el reset mas simple y que no toca nuesta area de trabajo
+git reset soft
+
+que comando borra el staging area sin tocar el area de trabajo
+git reset --mixed
+
+que comando borra todo no deja ningun tipo de rastro
+git reset hard
+
+
+que comando trae los commits que tengamos en el archivo txt
+git add commits.txt 
+
+que comando ayuda a saber como funciona git y alguno de sus comandos
+git help
+
+que comando limpia la pantalla
+clear
+
+que comando enseña  el commit actual
+head
+
+cuando le damos al comando git init que hacemos
+rama master
+
+que comando muestra las ramas
+git branch 
+
+con que comando se crean las ramas
+git branch nombreRama
+
+que comando se utiliza para movernos entre ramas
+git checkout nombreRama 
+
+con que comando se borra una rama
+git branch -D  nombreRama
+
+
+
+
+fusiones: es la creacion de un commit juntando una rama con otra.
+hay dos ramas test y master, de ejemplo.
+
+1.paso git checkout master, nos movemos a master
+2.paso fusionar git merge test.
+Listo fusionamos la rama test con la master 
+
+pueden salir dos tipos de mensajes luego de hacer la fusion
+fast-forward(simple y automatico) y manual merge(largo y manual)
+
+
+como clonar un repositorio
+git clone urlpagina
+
+que es un proyecto en git
+un repositorio
+
+cuantos tipos de repositorios hay?
+local y remoto
+
+comando para vincular los proyectos 
+git remote
+
+comando que sincroniza los repositorio
+git remote add origin urlREPO
+ 
+comando para ver el estado de la repo 
+git remote -v 
+
+comando que quita la repo 
+git remote remove origin 
+
+comando para subir cambios a la rama maestra
+git push origin master
+
+comando que muestra las ramas ocultas
+git branch -a 
+
+comando para bajar los cambios del repositorio remoto a origin master
+git fetch origin 
+
+comando para unir una rama con la de origen
+git merge origin
+
+se bajan los cambios del otro a la rama oculta luego a la rama origin master no estoy muy claro aqui
+
+ESTO ES MEDIO LADILLA
+issues: son una forma para continuar, mejorar o solucionar un error en nuestros repositorios. ideal para poner lo que nos falta
+milestones:grupos de issues que se aplican a un proyecto.
+labels:Para ponerle etiquetas a un proyecto.
+
+git tags
+tag: puntos especificos para marcar la version en un proyecto.
+
+comando para renombrar el ultimo commit
+git commit --amend -m "mensajeRenombrado"
+
+git tag -a  versiondelProyecto -m "version 0.8 del proyecto"
+
+git tag -a  versiondelProyecto -m "version 0.1 del proyecto" codigoshadelcommit:  especificacion de tag
+
+git push origin versiondelProyecto: para subir nuestro tag.
+
+git push origin --tags: para subir todas las versiones del proyecto que estemos haciendo
+para especificar las versiones de los commits.
+
+git push -f se fuerzan los cambios luego usuario y contraseña
+
+los workflows o flujos de trabajos
+
+el video 7 es para estar pendiente con los proyectos en equipos 
+
+
+git fork: 
+
+(FALTARON LOS PULLS)
+
+video 8 sitio web  crear proyectos de diseño 
+github pages: para hacer frontend se montan las paginas en el dominio.
+
+git clone
+git branch gh-pages: esta rama se tiene que crear asi
+
+
+video 9 deployment
+llaves ssh 
+ssh -keygen: para crear la llave
+ls -rf: para ver los archivos ocultos
+
